@@ -11,7 +11,7 @@ import { BehaviorSubject, map, Observable, take } from 'rxjs';
         <h1><ng-logo/>Form</h1>
         <p>
           Automatic Angular Reactive Form. 
-          An Angular module that steamlines Angular form creation.
+          An Angular module that streamlines Angular form creation.
         </p>
         <aform 
           class="flex-justify-content-center" width="200"
