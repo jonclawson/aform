@@ -16,7 +16,7 @@ import { FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
       >
 
       <mat-error *ngIf="control.invalid">
-        {{control.errors && control.errors.required && ('Required')}}
+        {{control.errors && control.errors['required'] && ('Required')}}
         <ng-container *ngFor="let error of control.errors | keyvalue">
           <p>{{errors && errors[error.key] && errors[error.key]}}</p>
         </ng-container>

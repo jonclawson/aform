@@ -4,7 +4,7 @@ import { Validators } from '@angular/forms';
 import { BehaviorSubject, map, Observable, take } from 'rxjs';
 
 @Component({
-  selector: 'my-app',
+  selector: 'app-root',
   template: `
     <div class="container">
       <div >
@@ -109,6 +109,7 @@ export class AppComponent {
           if (form.password !== value) {
             return { passwordsMatch: true };
           }
+          return;
         })
       );
     };
